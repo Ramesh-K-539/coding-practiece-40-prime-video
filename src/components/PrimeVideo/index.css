@@ -34,18 +34,12 @@ body {
 .action-movies-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
-.action-movies-container-2 {
-  display: flex;
-  flex-direction: row;
-}
 .heading {
   color: #ffffff;
   font-size: 34px;
   font-weight: 600;
-}
-
-.text {
-  color: #ffffff;
+  margin-bottom: 30px;
 }

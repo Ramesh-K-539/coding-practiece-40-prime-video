@@ -1,1 +1,26 @@
 /* Write your CSS here */
+
+.thumbnail-img {
+  height: 250px;
+  width: 165px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+}
+
+.custom-button {
+  align-self: flex-end;
+  background-color: transparent;
+  padding: 0px;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}

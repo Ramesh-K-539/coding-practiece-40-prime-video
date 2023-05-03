@@ -1,12 +1,23 @@
 // Write your code here
 
-import Slider from 'react-slick'
-
 import './index.css'
+
+import MoviesSlider from '../MoviesSlider'
 
 const PrimeVideo = props => {
   const {moviesList} = props
-  console.log(moviesList)
+
+  const actionMoviesList = moviesList.filter(
+    each => each.categoryId === 'ACTION',
+  )
+
+  console.log(actionMoviesList)
+
+  const comedyMoviesList = moviesList.filter(
+    each => each.categoryId === 'COMEDY',
+  )
+
+  console.log(comedyMoviesList)
 
   return (
     <div className="app-container">
@@ -18,14 +29,14 @@ const PrimeVideo = props => {
       <div className="videos-container">
         <div className="action-movies-container">
           <h1 className="heading">Action Movies</h1>
-          <div className="action-movies-container-2">
-            <Slider>
-              <div className="text">1</div>
-              <div className="text">1</div>
-              <div className="text">1</div>
-              <div className="text">1</div>
-              <div className="text">1</div>
-            </Slider>
+          <div>
+            <MoviesSlider moviesList={actionMoviesList} />
+          </div>
+        </div>
+        <div className="action-movies-container">
+          <h1 className="heading">Comedy Movies</h1>
+          <div>
+            <MoviesSlider moviesList={comedyMoviesList} />
           </div>
         </div>
       </div>
